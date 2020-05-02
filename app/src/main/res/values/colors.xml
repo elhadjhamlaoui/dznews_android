@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+
+    <color name="gray_200">#EEEEEE</color>
+    <color name="gray_300">#E0E0E0</color>
+
+
+    <color name="indigo_0">#e8eaf6</color>
+    <color name="indigo_1">#c5cae9</color>
+    <color name="amber_0">#fff8e1</color>
+    <color name="amber_1">#ffecb3</color>
+    <color name="lim_3">#dce775</color>
+    <color name="amber_2">#ffe082</color>
+    <color name="green_5">#4caf50</color>
+    <color name="blue_trans">#8b0084ff</color>
+
+    <color name="blue_10">#0d47a1</color>
+    <color name="blue_9">#01579b</color>
+    <color name="blue_8">#0277bd</color>
+    <color name="blue_7">#0288d1</color>
+    <color name="orange_50">#FFF3E0</color>
+
+
+    <color name="light_blue_0">#e1f5fe</color>
+    <color name="ripple">#4EC9C5C5</color>
+    <color name="ripple_blue">#01579b</color>
+    <color name="almost_black">#282828</color>
+
+    <color name="indigo_2">#9fa8da</color>
+
+
+    <color name="google_red">#E2405C</color>
+    <color name="red_log_in">#e23f5b</color>
+
+    <color name="facebook_blue">#026BE6</color>
+
+    <color name="grey_7">#616161</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>

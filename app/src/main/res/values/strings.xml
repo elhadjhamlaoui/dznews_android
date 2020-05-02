@@ -1,0 +1,61 @@
+<resources>
+    <string name="google_login_app_id" translatable="false">654010473097-urqb53s8v2n8nu5082vuhbakhlmcobgs.apps.googleusercontent.com</string>
+
+    <string name="app_name">Dznews</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="signed_up_success">تم التسجيل بنجاح</string>
+    <string name="login_now">الدخول</string>
+    <string name="have_to_login">يجب عليك تسجيل الدخول</string>
+    <string name="add_comment">أضف تعليق</string>
+    <string name="continu">continue</string>
+    <string name="new_account">حساب جديد</string>
+    <string name="login">الدخول</string>
+    <string name="password">password</string>
+    <string name="email">email address</string>
+    <string name="google">login with google</string>
+    <string name="facebook">login with facebook</string>
+    <string name="password_error">password incorrect</string>
+    <string name="email_error">email incorrect</string>
+    <string name="password_repeat">repeat password</string>
+    <string name="user_name">user name</string>
+    <string name="signup">register</string>
+    <string name="uploading_photo">uploading photo</string>
+    <string name="password_error_repeat">كلمة السر غير مطابقة</string>
+    <string name="field_required">يجب كتابة الاسم</string>
+    <string name="comments">comments</string>
+    <string name="facebook_app_id">215341456223091</string>
+    <string name="fb_login_protocol_scheme">fb215341456223091</string>
+    <string name="default_notification_channel_id">dznews_notifications</string>
+    <string name="play_store_link">https://play.google.com/store/apps/details?id=com.app_republic.dznews</string>
+    <string name="recent_news">آخر الأخبار h24</string>
+    <string name="coronavirus">Covid-19</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="login_user">تسجيل الدخول</string>
+    <string name="logout_user">تسجيل الخروج</string>
+    <string name="want_logout">هل تريد تسجيل الخروج؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="saved">الأخبار المفضلة</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_register">Register</string>
+    <string name="title_activity_article">Article</string>
+    <string name="want_disable_notifications">هل تريد تعطيل التنبيهات؟</string>
+
+</resources>

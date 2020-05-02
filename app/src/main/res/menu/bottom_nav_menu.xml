@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/nav_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_recent"
+        android:icon="@drawable/nav_recent"
+        android:title="@string/recent_news" />
+
+    <item
+        android:id="@+id/navigation_corona"
+        android:icon="@drawable/nav_corona"
+        android:title="@string/coronavirus" />
+
+
+    <item
+        android:id="@+id/navigation_saved"
+        android:icon="@drawable/nav_saved"
+        android:title="@string/saved" />
+
+
+
+
+</menu>

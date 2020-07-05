@@ -63,6 +63,8 @@ public class NewsItemActivity extends AppCompatActivity implements View.OnClickL
         picasso = appSingleton.getPicasso();
 
         article = getIntent().getParcelableExtra(StaticConfig.ARTICLE);
+
+        article.set_id(article.getTitle() + article.getSource());
         initialiseViews();
 
         Utils.loadBannerAd(this, "news");

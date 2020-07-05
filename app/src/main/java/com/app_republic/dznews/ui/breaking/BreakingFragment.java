@@ -79,16 +79,19 @@ public class BreakingFragment extends Fragment {
                 if (getActivity() != null) {
                     page++;
 
-                    ArticlesApiResponse response = apiResponse.body();
-                    breakingViewModel.getArticles().getValue().addAll(Utils.getFilteredArticles(getActivity(),response.getArticles()));
-                    breakingViewModel.setArticles(breakingViewModel.getArticles().getValue());
+                    if (apiResponse.body() != null) {
+                        ArticlesApiResponse response = apiResponse.body();
+                        breakingViewModel.getArticles().getValue().addAll(Utils.getFilteredArticles(getActivity(),response.getArticles()));
+                        breakingViewModel.setArticles(breakingViewModel.getArticles().getValue());
 
-                    if (response.getArticles().size() <= 5)
-                        AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
-                                response.getArticles(), breakingViewModel.getArticles().getValue(), 1, 0);
-                    else
-                        AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
-                                response.getArticles(), breakingViewModel.getArticles().getValue(), NUMBER_OF_NATIVE_ADS_NEWS, startIndex);
+                        if (response.getArticles().size() <= 5)
+                            AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
+                                    response.getArticles(), breakingViewModel.getArticles().getValue(), 1, 0);
+                        else
+                            AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
+                                    response.getArticles(), breakingViewModel.getArticles().getValue(), NUMBER_OF_NATIVE_ADS_NEWS, startIndex);
+                    }
+
                 }
 
             }

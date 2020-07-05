@@ -78,18 +78,21 @@ public class HomeFragment extends Fragment {
             public void onResponse(Call<ArticlesApiResponse> call, Response<ArticlesApiResponse> apiResponse) {
                 if (getActivity() != null) {
                     isLoading = false;
-                    page++;
-                    ArticlesApiResponse response = apiResponse.body();
-                    homeViewModel.getArticles().getValue().addAll(Utils.getFilteredArticles(getActivity(),response.getArticles()));
-                    homeViewModel.setArticles(homeViewModel.getArticles().getValue());
+                    if (apiResponse.body() != null){
+                        page++;
+                        ArticlesApiResponse response = apiResponse.body();
+                        homeViewModel.getArticles().getValue().addAll(Utils.getFilteredArticles(getActivity(),response.getArticles()));
+                        homeViewModel.setArticles(homeViewModel.getArticles().getValue());
 
-                    if (response.getArticles().size() <= 5)
-                        AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
-                                response.getArticles(), homeViewModel.getArticles().getValue(), 1, 0);
-                    else
-                        AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
-                                response.getArticles(), homeViewModel.getArticles().getValue(), NUMBER_OF_NATIVE_ADS_NEWS, startIndex);
-                }
+                        if (response.getArticles().size() <= 5)
+                            AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
+                                    response.getArticles(), homeViewModel.getArticles().getValue(), 1, 0);
+                        else
+                            AppSingleton.getInstance(getActivity()).loadNativeAds(mNativeAds, recyclerView, articlesAdapter,
+                                    response.getArticles(), homeViewModel.getArticles().getValue(), NUMBER_OF_NATIVE_ADS_NEWS, startIndex);
+
+                    }
+                           }
 
             }
 
